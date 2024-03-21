@@ -5,5 +5,11 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
 
-  <include file="001-initial-schema.sql" relativeToChangelogFile="true"/>
+  <changeSet id="001-initial-schema" author="ernest.staszuk">
+    <sqlFile path="001-initial-schema.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="002-events-table" author="ernest.staszuk">
+    <sqlFile path="002-events-table.sql" relativeToChangelogFile="true" />
+  </changeSet>
 </databaseChangeLog>
